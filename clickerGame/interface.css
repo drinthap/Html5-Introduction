@@ -1,0 +1,24 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+	color: white;
+    font-family: verdana;
+    font-size: 100%;
+}
+
+/*<paragraph class="center">*/
+p.center { 
+	text-align: center;
+}
+
+/*<div id="right">*/
+div#right{ 
+	text-align: right;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--Current ids:
+cubes //current cube amount
+clickUpgradeCost //click power upgrade cost
+currentClickPower // user gains currentClickPower cubes per click
+pixelUpgradeCost //pixel upgrade cost
+currentPixels //user gains pixelPower(1)*currentPixels cubes per second
+currentPixelPower //pixelPower(1)*currentPixels cubes
+-->
+<!--Functions:
+buyClickUpgrade //increments currentClickPower at some cost
+buyPixelUpgrade //increments currentPixels at some cost
+-->
+<html>
+<!--This is the head, stuff that shouldn't be shown, but should load first are here-->
+<head>
+	<link rel="stylesheet" type="text/css" href="interface.css" />
+	<title>Cube Clicker</title>
+</head>
+
+<!--The body is where the stuff you see on the web page goes-->
+<body>
+	<h1>Welcome to Cube Clicker</h1>
+
+	<p class="center">
+		Cubes: <span id="cubes">0</span><br /> <br />
+		<button onclick="cubeClick(1)">Cubify</button> <!--This is a button, it calls the cubeClick() function-->
+		
+	</p>
+
+	<!-- First Upgrade -->
+	<div>
+		<p>
+			<button onclick="buyClickUpgrade()">Buy Click Power</button>
+			Cost: <span id="clickUpgradeCost">10</span>	<br /><br />
+			Current Click Power: <span id="currentClickPower">1</span>
+		</p>
+	</div>
+
+	<!-- Second Upgrade -->
+	<div>
+		<p>
+			<button onclick="buyPixelUpgrade()">Buy Pixel</button>
+			Cost: <span id="pixelUpgradeCost">10</span>	<br /><br />
+			Pixels: <span id="currentPixels">0</span> (<span id="currentPixelPower">0</span> cubes/sec)
+		</p>
+	</div>
+	
+	<a href="https://www.google.com">google</a> <!--This is a link to google-->
+	
+	<!--Scripts go at the bottom of the body so they run after everything else has loaded-->
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
